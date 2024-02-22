@@ -1,4 +1,7 @@
+import Foundation
+
 // přidá číslo do pole čísel, vrátí převrácené pole těchto čísel, pouze kladná čísla
+
 func digitize(_ num:Int) -> [Int] {
   let numb = String(num)
   let digits = numb.compactMap{ $0.wholeNumberValue }
@@ -25,3 +28,13 @@ func evenNumbers2(arrayNum: [Int]) -> [Int] {
 }
 
 print(evenNumbers2(arrayNum: data))
+
+
+
+// Přístup k jednotlivým charakterům ze stringu pomocí indexu, jako u pole.
+let s = "Hello"
+let thirdCharacterIndex = s.index(s.startIndex, offsetBy: 2) // Getting the index of the third character
+let thirdCharacter = s[thirdCharacterIndex] // Accessing the third character
+print(thirdCharacter) // Output: "l"
+
+
